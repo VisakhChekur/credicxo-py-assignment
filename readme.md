@@ -21,7 +21,8 @@ NOTE: Ideally, a single selenium driver would be used for all the URLs, but in t
 6. Once the data from all the URLs are scraped, save the data to a JSON file.
 7. The data, from the JSON file, was then uploaded to a PostgreSQL database using the `psycopg2` module.
 
+Steps 1 - 6 are executed in `main.py` while step 7 (adding to database) is executed in `db.py`.
 
-# BONUS: sBypass Amazon Captcha
+# BONUS: Bypass Amazon Captcha
 
 I was not able to write a script to bypass the captcha, but the simplified general approach to do so would be as follows. First, I would have to train a model to solve the captchas using some deep learning algorithm. Then this model could be used in the script to solve the captcha everytime it is seen.
